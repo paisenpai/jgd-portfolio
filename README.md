@@ -1,6 +1,6 @@
-# John Gavin Deposoy — Portfolio
+Portfolio
 
-Personal portfolio website. Built with plain HTML, CSS, and vanilla JavaScript — no build step required.
+Personal portfolio website. Built with plain HTML, CSS, and vanilla JavaScript, hosted on AWS.
 
 ## Project Structure
 
