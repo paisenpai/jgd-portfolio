@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="John Gavin Deposoy - BS Computer Science at PUP Manila. Developer, cloud enthusiast, and open source contributor.">
+    <meta name="author" content="John Gavin Deposoy">
+    <title>John Gavin Deposoy | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+    <div id="cursor-dot" aria-hidden="true"></div>
+    <div id="cursor-ring" aria-hidden="true"></div>
+
+    <!-- ============================================================
+         NAVIGATION
+         ============================================================ -->
+    <header id="main-header">
+        <nav class="navbar container">
+            <a href="index.html" class="nav-logo">JGD</a>
+            <ul class="nav-links" id="nav-links" role="list">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Switch to dark mode">
+                    <span id="theme-icon">&#9790;</span>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-orb orb-1" aria-hidden="true"></div>
+        <div class="hero-bg-orb orb-2" aria-hidden="true"></div>
+
+        <div class="container hero-inner">
+
+            <div class="hero-text">
+
+                <h1 style="font-size: 100px;" class="hero-name">
+                    John Gavin<br>
+                    <span class="accent-text">Deposoy</span>
+                </h1>
+
+                <p class="hero-subtitle">BS Computer Science, Polytechnic University of the Philippines</p>
+
+                <p class="hero-intro">
+                    Active<span class="accent-text"> student leader </span> and <span class="accent-text">teknolohista
+                        ng bayan</span>,
+                    a daily learner on getting by. Always open to connect and collaborate, just ask! <i>(before I
+                        do)</i>
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary" id="hero-cta">Get in Touch</a>
+                    <a href="gallery.html" class="btn btn-outline" id="hero-gallery">View Projects</a>
+                </div>
+
+                <div class="hero-socials">
+                    <a href="https://github.com/paisenpai" target="_blank" rel="noopener noreferrer" class="social-link"
+                        id="hero-github">GitHub</a>
+                    <a href="https://www.linkedin.com/in/johngavindeposoy/" target="_blank" rel="noopener noreferrer"
+                        class="social-link" id="hero-linkedin">LinkedIn</a>
+                    <a href="mailto:jgdeposoy@gmail.com" class="social-link" id="hero-email">Email</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="profile-frame">
+                    <img src="images/profile.png" alt="John Gavin Deposoy" class="profile-img" id="profile-photo">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         PROJECTS LIST (accordion)
+         Images appear inside each expanded item.
+         ============================================================ -->
+    <section id="projects-list" class="projects-list-section">
+        <div class="container">
+
+            <div class="hero-name">
+                <h1>Projects</h1>
+            </div>
+
+            <div class="accordion" id="projects-accordion">
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false" id="acc-btn-1" aria-controls="acc-body-1">
+                        <span class="acc-num">01</span>
+                        <span class="acc-title">AWS Student Builder Group - PUP Website</span>
+                        <span class="acc-tags">React.js &bull; Vite &bull; Astro &bull; AWS</span>
+                        <span class="acc-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-body" id="acc-body-1" role="region" aria-labelledby="acc-btn-1">
+                        <div class="accordion-body-inner">
+                            <p>Official website for AWS Student Builder Group - PUP. Showcases projects, events, and
+                                serves as the central hub for the community.Also contains the org's ID Finder tool.
+                                Utilized and visited by hundreds monthly.</p>
+                            <img src="images/projects/acc-awscc.png" alt="AWSCC PUP Website preview"
+                                class="acc-project-img">
+                            <a href="https://awsccpup.cloud/" target="_blank" rel="noopener noreferrer"
+                                class="project-link">View Live Site &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false" id="acc-btn-2" aria-controls="acc-body-2">
+                        <span class="acc-num">02</span>
+                        <span class="acc-title">Skill Builder Department Learning Management System</span>
+                        <span class="acc-tags">React.js &bull; TypeScript &bull; Tailwind &bull; AWS</span>
+                        <span class="acc-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-body" id="acc-body-2" role="region" aria-labelledby="acc-btn-2">
+                        <div class="accordion-body-inner">
+                            <p>Specialized Learning Management System for the AWS Student Builder Group - PUP Skill
+                                Builder Department, hosting all learning materials
+                                and modules for the department. Currently in use by hundreds of members of the
+                                organization.</p>
+                            <img src="images/projects/acc-lms.png" alt="Skill Builder LMS preview"
+                                class="acc-project-img">
+                            <a href="https://sbd.awsccpup.cloud/" target="_blank" rel="noopener noreferrer"
+                                class="project-link">View Live Site &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false" id="acc-btn-3" aria-controls="acc-body-3">
+                        <span class="acc-num">03</span>
+                        <span class="acc-title">CertEval</span>
+                        <span class="acc-tags">React.js &bull; TypeScript &bull; AWS</span>
+                        <span class="acc-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-body" id="acc-body-3" role="region" aria-labelledby="acc-btn-3">
+                        <div class="accordion-body-inner">
+                            <p>Certificate and event feedback automation system for AWS Student Builder Group - PUP
+                                events and workshops.</p>
+                            <!-- <img src="images/projects/acc-certeval.png" alt="CertEval preview" class="acc-project-img"> -->
+                            <a href="https://certeval.awsccpup.cloud/" target="_blank" rel="noopener noreferrer"
+                                class="project-link">View Live Site &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false" id="acc-btn-4" aria-controls="acc-body-4">
+                        <span class="acc-num">04</span>
+                        <span class="acc-title">QSee</span>
+                        <span class="acc-tags">React.js &bull; Node.js &bull; Supabase &bull; Gemini API</span>
+                        <span class="acc-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-body" id="acc-body-4" role="region" aria-labelledby="acc-btn-4">
+                        <div class="accordion-body-inner">
+                            <p>Civil complaint forum and issue
+                                tracker with user and admin access. Specialized and made for the Quezon City LGU. Won QC
+                                Innohub 2025.</p>
+                            <img src="images/projects/acc-qsee.png" alt="QSee preview" class="acc-project-img">
+                            <a href="https://gitgyud-sparkfest.vercel.app/map" class="project-link">View Live Site
+                                &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false" id="acc-btn-5" aria-controls="acc-body-5">
+                        <span class="acc-num">05</span>
+                        <span class="acc-title">Thryve</span>
+                        <span class="acc-tags">React.js &bull; Node.js &bull; Supabase &bull; AI</span>
+                        <span class="acc-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-body" id="acc-body-5" role="region" aria-labelledby="acc-btn-5">
+                        <div class="accordion-body-inner">
+                            <p> Business feature prototyping powered by AI, includes dashboard and Real Time Chat for
+                                unified team workflows. Aimed to reduce prototype costs for startups and MSMEs. BPI
+                                Datawave Hackathon 2025 entry.</p>
+                            <img src="images/projects/acc-thryve.png" alt="Thryve preview" class="acc-project-img">
+                            <a href="https://www.figma.com/design/VYNws9KZtzvOF0RXOD0d07/THRYVE-PROTOTYPE?t=OOfgPpmj1xPUJ6WT-0"
+                                class="project-link">View Prototype &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false" id="acc-btn-6" aria-controls="acc-body-6">
+                        <span class="acc-num">06</span>
+                        <span class="acc-title">Specula Programming Language</span>
+                        <span class="acc-tags">C &bull; C# &bull; WebAssembly &bull; React.js</span>
+                        <span class="acc-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="accordion-body" id="acc-body-6" role="region" aria-labelledby="acc-btn-6">
+                        <div class="accordion-body-inner">
+                            <p>A programming language focused on concurrency and communication, with a lexer and parser
+                                built from scratch.</p>
+                            <img src="images/projects/acc-specula.png" alt="Specula PL preview" class="acc-project-img">
+                            <a href="https://sky1sbloo.github.io/specula-pl/" target="_blank" rel="noopener noreferrer"
+                                class="project-link">View Live Site &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         CONTACT
+         ============================================================ -->
+    <section id="contact" class="contact-section reveal">
+        <div class="container">
+            <div class="section-intro centered">
+                <h1><i>Have anything interesting?</i></h1>
+            </div>
+            <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="contact-name">Name or nickname</label>
+                    <input type="text" id="contact-name" name="name" placeholder="John Gavin" required
+                        autocomplete="name">
+                    <span class="form-error" id="error-name" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email Address</label>
+                    <input type="email" id="contact-email" name="email" placeholder="linustorvalds@hotmail.com" required
+                        autocomplete="email">
+                    <span class="form-error" id="error-email" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" name="message" rows="5" placeholder="Tung tung tung sahur"
+                        required></textarea>
+                    <span class="form-error" id="error-message" aria-live="polite"></span>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="footer-logo">JGD</span>
+                <p>John Gavin Deposoy</p>
+            </div>
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="footer-socials">
+                <a href="https://github.com/paisenpai" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/johngavindeposoy/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:jgdeposoy@gmail.com">jgdeposoy@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">&#8593;</button>
+
+    <script src="js/accordion.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

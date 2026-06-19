@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Project gallery and volunteer work of John Gavin Deposoy - web development projects and community contributions.">
+    <meta name="author" content="John Gavin Deposoy">
+    <title>Gallery | John Gavin Deposoy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+    <div id="cursor-dot" aria-hidden="true"></div>
+    <div id="cursor-ring" aria-hidden="true"></div>
+
+    <!-- ============================================================
+         NAVIGATION
+         ============================================================ -->
+    <header id="main-header">
+        <nav class="navbar container">
+            <a href="index.html" class="nav-logo">JGD</a>
+            <ul class="nav-links" id="nav-links" role="list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Switch to dark mode">
+                    <span id="theme-icon">&#9790;</span>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- ============================================================
+         PROJECT GALLERY
+         ============================================================ -->
+    <section id="gallery" class="gallery-section" style="padding-top: calc(var(--nav-height) + var(--section-pad));">
+        <div class="container">
+
+            <div class="section-intro centered">
+                <h1>Project Gallery</h1>
+            </div>
+
+            <!-- Featured project -->
+            <div class="gallery-featured reveal">
+
+                <div class="featured-img-wrap">
+                    <img src="images/projects/proj-featured.png" alt="AWSCC PUP Official Website screenshot"
+                        class="featured-img" id="gallery-featured-img">
+                    <p class="img-caption">AWSCC PUP Official Website</p>
+                </div>
+
+                <div class="featured-text">
+                    <h3>AWSCC PUP Official Website</h3>
+                    <p>The latest big project I've worked on, it's the official website of the AWS Cloud Club PUP
+                        Manila. We built it from the ground up and it's been a great learning experience.</p>
+                    <div class="tech-tags">
+                        <span class="tag">React.js</span>
+                        <span class="tag">Vite</span>
+                        <span class="tag">Astro</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Supabase</span>
+                        <span class="tag">AWS</span>
+                    </div>
+                    <a href="https://awsccpup.cloud/" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                        id="featured-link">View Live Site &rarr;</a>
+                </div>
+
+            </div>
+
+            <!-- Other Projects: centered text above 3-image carousel -->
+            <div class="gallery-secondary reveal">
+
+                <div class="section-intro centered">
+                    <h2>Other Projects</h2>
+                </div>
+
+                <div class="carousel" id="gallery-carousel">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-track" id="carousel-track">
+
+                            <div class="carousel-slide">
+                                <img src="images/projects/proj-1.png" alt="Skill Builder LMS screenshot"
+                                    class="carousel-img">
+                                <p class="img-caption">
+                                    AWS SBG PUP SBD Learning Management System -
+                                    <a href="https://sbd.awsccpup.cloud/" target="_blank"
+                                        rel="noopener noreferrer">sbd.awsccpup.cloud</a>
+                                </p>
+                            </div>
+
+                            <div class="carousel-slide">
+                                <img src="images/projects/proj-2.png" alt="QSee screenshot" class="carousel-img">
+                                <p class="img-caption">QSee &mdash; Civil Complaint Forum</p>
+                            </div>
+
+                            <div class="carousel-slide">
+                                <img src="images/projects/proj-3.png" alt="Python Asia 2026" class="carousel-img">
+                                <p class="img-caption">
+                                    Python Asia 2026 &mdash;
+                                    <a href="https://2026.pythonasia.org/" target="_blank"
+                                        rel="noopener noreferrer">View Project</a>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button class="carousel-prev" id="carousel-prev" aria-label="Previous slide">&#8592;</button>
+                    <button class="carousel-next" id="carousel-next" aria-label="Next slide">&#8594;</button>
+
+                    <div class="carousel-dots" role="tablist" aria-label="Carousel navigation">
+                        <button class="carousel-dot active" role="tab" aria-label="Slide 1"
+                            aria-selected="true"></button>
+                        <button class="carousel-dot" role="tab" aria-label="Slide 2" aria-selected="false"></button>
+                        <button class="carousel-dot" role="tab" aria-label="Slide 3" aria-selected="false"></button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         VOLUNTEER WORK
+         ============================================================ -->
+    <section id="volunteer" class="volunteer-section reveal">
+        <div class="container">
+
+            <div class="section-intro centered">
+                <h2>Volunteering</h2>
+                <p>Serving the community.</p>
+            </div>
+
+            <div class="volunteer-grid">
+
+                <div class="volunteer-card">
+                    <div class="volunteer-info">
+                        <span class="volunteer-org">Director</span>
+                        <h4>AWS Cloud Club PUP Manila</h4>
+                        <span class="volunteer-dates">Sept 2023 &ndash; Present</span>
+                        <p>Operations and Technology Department, contributing to cloud education and community events.
+                        </p>
+                        <a href="https://awsccpup.cloud/" target="_blank" rel="noopener noreferrer"
+                            class="project-link">Visit Organization &rarr;</a>
+                    </div>
+                </div>
+
+
+                <div class="volunteer-card">
+                    <div class="volunteer-info">
+                        <span class="volunteer-org">Officer</span>
+                        <h4>AWS Cloud Club Philippines</h4>
+                        <span class="volunteer-dates">Sept 2024 &ndash; Present</span>
+                        <p>Technical Event Officer, responsible for organizing and leading technical events for the
+                            organization.</p>
+                        <a href="https://www.facebook.com/AWSCloudClubsPhilippines/" target="_blank"
+                            rel="noopener noreferrer" class="project-link">Visit Organization &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="volunteer-card">
+                    <div class="volunteer-info">
+                        <span class="volunteer-org">Co-Lead</span>
+                        <h4>Python Philippines</h4>
+                        <span class="volunteer-dates">Dec 2025 &ndash; Present</span>
+                        <p>Education Summit Co-Lead, organizing and running community learning events across the
+                            Philippines.</p>
+                        <a href="https://2026.pythonasia.org/" target="_blank" rel="noopener noreferrer"
+                            class="project-link">Visit Organization &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="volunteer-card">
+                    <div class="volunteer-info">
+                        <span class="volunteer-org">Officer</span>
+                        <h4>Google Developer Groups on Campus - PUP Manila</h4>
+                        <span class="volunteer-dates">Sept 2023 &ndash; Present</span>
+                        <p>Community Relations and Cybersecurity Committee, responsible for outreach and organizing
+                            security-related events.</p>
+                        <a href="https://gdg.community.dev/gdg-on-campus-polytechnic-university-of-the-philippines-manila-philippines/  "
+                            target="_blank" rel="noopener noreferrer" class="project-link">Visit Organization &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         CONTACT
+         ============================================================ -->
+    <section id="contact" class="contact-section reveal">
+        <div class="container">
+            <div class="section-intro centered">
+                <h2>Contact Me</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Reach out anytime.</p>
+            </div>
+            <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name" name="name" placeholder="Lorem Ipsum" required
+                        autocomplete="name">
+                    <span class="form-error" id="error-name" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email Address</label>
+                    <input type="email" id="contact-email" name="email" placeholder="lorem@ipsum.com" required
+                        autocomplete="email">
+                    <span class="form-error" id="error-email" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" name="message" rows="5" placeholder="Lorem ipsum dolor sit amet..."
+                        required></textarea>
+                    <span class="form-error" id="error-message" aria-live="polite"></span>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="footer-logo">JGD</span>
+                <p>John Gavin Deposoy</p>
+            </div>
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="footer-socials">
+                <a href="https://github.com/paisenpai" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/johngavindeposoy/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:jgdeposoy@gmail.com">jgdeposoy@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">&#8593;</button>
+
+    <script src="js/carousel.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+/* ================================================================
+   responsive.css - Breakpoints for all screen sizes
+   Mobile-first overrides at 480 / 768 / 1024 / 1280px
+   ================================================================ */
+
+
+/* ----------------------------------------------------------------
+   LAPTOP (max 1024px)
+   ---------------------------------------------------------------- */
+@media (max-width: 1024px) {
+    :root { --section-pad: 72px; }
+
+    .profile-frame  { width: 280px; height: 280px; }
+    .hero-inner     { gap: 36px; }
+    .about-grid     { gap: 44px; }
+    .gallery-featured { gap: 36px; }
+
+    /* certs stay 2-col on tablet */
+    .certs-grid     { grid-template-columns: repeat(2, 1fr); }
+
+    /* volunteer grid stays 2-col on tablet */
+    .volunteer-grid { grid-template-columns: repeat(2, 1fr); }
+
+    .footer-inner {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+
+    .footer-brand { grid-column: 1 / -1; }
+
+    /* hide tech tags in accordion to save width */
+    .acc-tags { display: none; }
+}
+
+
+/* ----------------------------------------------------------------
+   TABLET / LARGE PHONE (max 768px)
+   ---------------------------------------------------------------- */
+@media (max-width: 768px) {
+    :root { --section-pad: 56px; }
+
+    /* mobile nav: panel drops from top */
+    .nav-links {
+        position: fixed;
+        top: var(--nav-height);
+        left: 0;
+        right: 0;
+        background: rgba(250, 250, 250, 0.97);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 24px 24px;
+        gap: 2px;
+        border-bottom: 1px solid var(--gray-200);
+        box-shadow: var(--shadow-lg);
+        transform: translateY(-110%);
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 999;
+    }
+
+    .nav-links.open { transform: translateY(0); }
+    .nav-toggle     { display: flex; }
+
+    /* hero stacks: image on top, text below */
+    .hero-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-text  { order: 2; }
+    .hero-image { order: 1; }
+
+    .hero-intro   { max-width: 100%; margin-left: auto; margin-right: auto; }
+    .hero-actions { justify-content: center; }
+    .hero-socials { justify-content: center; }
+    .profile-frame { width: 210px; height: 210px; }
+
+    /* about: single column */
+    .about-grid { grid-template-columns: 1fr; gap: 0; }
+
+    /* gallery featured: stacks */
+    .gallery-featured { grid-template-columns: 1fr; margin-bottom: 64px; }
+    .featured-img     { height: 260px; }
+
+    /* certs: single column */
+    .certs-grid { grid-template-columns: 1fr; }
+
+    /* volunteer: single column */
+    .volunteer-grid { grid-template-columns: 1fr; }
+
+    /* carousel arrows stay inside */
+    .carousel-prev { left:  8px; }
+    .carousel-next { right: 8px; }
+
+    /* footer: single column */
+    .footer-inner  { grid-template-columns: 1fr; gap: 24px; }
+    .footer-brand  { grid-column: auto; }
+}
+
+
+/* ----------------------------------------------------------------
+   SMALL PHONE (max 480px)
+   ---------------------------------------------------------------- */
+@media (max-width: 480px) {
+    :root { --section-pad: 48px; }
+
+    h1 { font-size: 2.25rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.25rem; }
+
+    /* hero buttons stack full-width */
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn { width: 100%; justify-content: center; }
+
+    .profile-frame { width: 180px; height: 180px; }
+
+    /* accordion slightly smaller text */
+    .accordion-header { font-size: 0.9375rem; gap: 12px; }
+    .accordion-body-inner { padding-left: 32px; }
+
+    /* accordion project image shorter on small screens */
+    .acc-project-img { height: 160px; }
+
+    /* table scrolls horizontally on tiny screens */
+    .skills-table-wrap { overflow-x: auto; }
+    .skills-table      { font-size: 0.8125rem; min-width: 480px; }
+    .skills-table td,
+    .skills-table th   { padding: 11px 14px; }
+
+    /* carousel image shorter */
+    .carousel-img { height: 200px; }
+
+    .carousel-prev,
+    .carousel-next { width: 36px; height: 36px; font-size: 0.9rem; }
+
+    /* footer links go inline */
+    .footer-links,
+    .footer-socials { flex-direction: row; flex-wrap: wrap; gap: 8px 16px; }
+}
+
+
+/* ----------------------------------------------------------------
+   LARGE DESKTOP (min 1280px)
+   ---------------------------------------------------------------- */
+@media (min-width: 1280px) {
+    :root { --section-pad: 112px; }
+
+    .acc-tags { display: inline; }
+
+    .profile-frame { width: 380px; height: 380px; }
+    .hero-inner    { gap: 80px; }
+    .featured-img  { height: 480px; }
+}
