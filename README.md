@@ -1,4 +1,4 @@
-Portfolio
+## Portfolio
 
 Personal portfolio website. Built with plain HTML, CSS, and vanilla JavaScript, hosted on AWS.
 
